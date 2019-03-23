@@ -1,0 +1,68 @@
+.App {
+  text-align: center;
+  background-color: grey;
+}
+
+#clear { grid-area: clear; }
+#add { grid-area: add; }
+#subtract { grid-area: subtract; }
+#divide { grid-area: divide; }
+#multiply { grid-area: multiply; }
+#nine { grid-area: nine; }
+#eight { grid-area: eight; }
+#seven { grid-area: seven; }
+#six { grid-area: six; }
+#five { grid-area: five; }
+#four { grid-area: four; }
+#three { grid-area: three; }
+#two { grid-area: two; }
+#one { grid-area: one; }
+#zero { grid-area: zero; }
+#equals { grid-area: equals; }
+#decimal { grid-area: decimal; }
+
+#display { 
+  grid-area: display;
+  border: 1px solid black;
+  margin: .3rem;
+  font-size: 2rem;
+  padding: 1rem;
+  background-color: white;
+  text-align: right;
+}
+
+.calc-wrapper {
+  margin: 4rem auto;
+  width: 25rem;
+  border: 5px solid black;
+  box-shadow: 0 2rem 4rem black;
+  display: grid;
+  grid-template-areas:
+  'display display display display'
+  'display display display display'
+  'clear clear add subtract'
+  'seven eight nine divide'
+  'four five six multiply'
+  'three two one equals'
+  'zero zero decimal equals';
+}
+
+button {
+  text-align: center;
+  border: 1px solid black;
+  padding: 1rem;
+  margin: .5rem;
+  font-size: 1.5rem;
+  transition: all 200ms ease-out;
+  outline: none;
+}
+
+button:hover {
+  box-shadow: 0 1rem 2rem black;
+  transform: translateY(-3px);
+}
+
+button:active {
+  box-shadow: 0 .5rem 1rem black;
+  transform: translateY(-1px);
+}
